@@ -27,11 +27,11 @@
 
 
 # 4 - TRABALHANDO DE FORMA BÁSICA
-	git add arquivo									#ADD ARQUIVO ESPECIFICO.
-	git add .										#ADD ALL.
-	git commit -m "comentários das alterações"		#COMENTADO AS ALTERAÇÕES.
+	git add arquivo								#ADD ARQUIVO ESPECIFICO.
+	git add .								#ADD ALL.
+	git commit -m "comentários das alterações"		                #COMENTADO AS ALTERAÇÕES.
 	git push origin master							#enviar estas alterações ao seu repositório remoto.
-	git remote add origin <servidor> 				#conectar seu repositório a um servidor remoto .
+	git remote add origin <servidor> 				        #conectar seu repositório a um servidor remoto .
 
 
 # 5 - LOGS
@@ -43,8 +43,8 @@
 
 # 6 - VERIFICANDO AS ALTERAÇÕES
 	git diff					#mostra as alteraçoes feitas nos arquivos antes do commit.
-	git diff nome_arquivo 		#alteraçoes feitas somente neste arquivo.
-	git diff commit1 commit2    #vendo as diferenças entre os commits.
+	git diff nome_arquivo 		                #alteraçoes feitas somente neste arquivo.
+	git diff commit1 commit2                        #vendo as diferenças entre os commits.
 
 
 # 7 - COMPARANDO DIRETORIOS
@@ -81,6 +81,18 @@
 # 12 - CASOS RAROS 
 	* pegar alterações de em um branch/ramo específico de um repositório remoto no GIT?
 		https://pt.stackoverflow.com/questions/6172/como-pegar-alterações-de-em-um-branch-ramo-específico-de-um-repositório-remoto-n
+		
+
+# 13 - REVERTENDO CODIGO
+
+How to discard all uncommitted changes.
+https://pt.stackoverflow.com/questions/323668/como-descartar-todas-as-altera%C3%A7%C3%B5es-n%C3%A3o-commitadas
+
+	git checkout -- . 		#reverter todas as alterações em arquivos que estavam versionados.
+	git clean -f -d			#apagar todos os arquivos e diretórios criados
+	git reset HEAD -- .		#remove arquivos q foram add no HEAD, mais n foi commitado.
+
+
 
 
 
