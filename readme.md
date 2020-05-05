@@ -8,17 +8,17 @@
 	
 
 # 1 - CRENDENCIAS DO USUARIO
-	git config --global user.name "John Doe" 				#sua identidade.
+	git config --global user.name "John Doe" 			#sua identidade.
 	git config --global user.email johndoe@example.com 		#seu email.
-	git config -l   										#listando as configurações padrao do user.
-	git remote -v   										#caminho do diretorio.
+	git config -l   						#listando as configurações padrao do user.
+	git remote -v   						#caminho do diretorio.
 
 
 # 2 - SINCRONIZANDO
-	git init 											#para criar um novo repositório.
-	git init --bare 									#pasta do central do projeto.
+	git init 						#para criar um novo repositório.
+	git init --bare 					#pasta do central do projeto.
 	git remote add origin /caminho/para/o/repositório 	#para sincronizar as pastas.
-	git clone /caminho/para/o/repositório 				#crie uma cópia de trabalho em um repositório local.
+	git clone /caminho/para/o/repositório 			#crie uma cópia de trabalho em um repositório local.
 	git clone usuário@servidor:/caminho-REPOSITORIO/	#usar um servidor remoto.
 
 
@@ -35,9 +35,9 @@
 
 
 # 5 - LOGS
-	git log 					#mostar todos os commits com detalhes, ordena pelos commits mais recentes.
+	git log 			#mostar todos os commits com detalhes, ordena pelos commits mais recentes.
 	git log --name--status 		#mostar todos os commits com detalhes dos codigos.
-	git log --oneline		    #lista os mostrando somente a descricao do commit.
+	git log --oneline		#lista os mostrando somente a descricao do commit.
 	git log --pretty=format:"" 	#personalisando o log.
 
 
@@ -48,7 +48,7 @@
 
 
 # 7 - COMPARANDO DIRETORIOS
-	git status 				#compara (WORKING DIRCTORY) X (STAGING AREA).
+	git status 			#compara (WORKING DIRCTORY) X (STAGING AREA).
 	git diff --staged		#compara o (STAGING AREA) X (GIT REPOSITORY).
 
 
@@ -57,25 +57,25 @@
 
 
 # 9 - BRANCH
-	git branch								#lista as branchs.
+	git branch						#lista as branchs.
 	git branch nome_branch					#criar uma branchs, obs log desta nova, se basean na branch que esta no momento de criacao.
-	git checkout --orphan nome_branch		#criar uma branch, obs log sera vazio, orfao.
+	git checkout --orphan nome_branch			#criar uma branch, obs log sera vazio, orfao.
 	git checkout nome_branch				#mudando de brach.
 	git merge nome_branch 					#sincronizando, branch que ta trabalhando c/ branch passada pelo merge.
 	git checkout -b nome_branch				#criar uma branch e te joga para dentro da q foi criada.
-	git checkout id_commit -b nome_branch 	#criar uma branch baseada com o log do commit passado.
+	git checkout id_commit -b nome_branch 			#criar uma branch baseada com o log do commit passado.
 	git checkout -m novo_nome				#renomeando a branche que esta trabalhando.
 	git branch -D nome_branch				#deletando a branche.
 
 
 # 10 - ERROS
 	git merge --abort       	#aborta o merge em caso de erros.
-	git reset 					#desfaz o commit antes do add.
+	git reset 			#desfaz o commit antes do add.
 
 
 # 11 - CHECKOUT PROJECT FOR DEBUG
 	git checkout id_commit 					#Para pegar uma versao antida do projeto.
-	git fetch && git checkout background 	#baixando uma branch para desenvolvimento.
+	git fetch && git checkout background 			#baixando uma branch para desenvolvimento.
 
 
 # 12 - CASOS RAROS 
