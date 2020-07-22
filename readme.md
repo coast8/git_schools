@@ -93,6 +93,16 @@ https://pt.stackoverflow.com/questions/323668/como-descartar-todas-as-altera%C3%
 	git reset HEAD -- .		#remove arquivos q foram add no HEAD, mais n foi commitado.
 
 
+# 14 - Merge a specific commit
+
+* cherry-pick
+* rebase
+
+	https://stackoverflow.com/questions/881092/how-to-merge-a-specific-commit-in-git
+	
+	https://stackoverflow.com/questions/1670970/how-to-cherry-pick-multiple-commits
+
+
 
 
 
