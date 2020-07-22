@@ -79,13 +79,16 @@
 
 
 # 12 - CASOS RAROS 
+	
 	* pegar alterações de em um branch/ramo específico de um repositório remoto no GIT?
-		https://pt.stackoverflow.com/questions/6172/como-pegar-alterações-de-em-um-branch-ramo-específico-de-um-repositório-remoto-n
+		
+	https://pt.stackoverflow.com/questions/6172/como-pegar-alterações-de-em-um-branch-ramo-específico-de-um-repositório-remoto-n
 		
 
 # 13 - REVERTENDO CODIGO
 
 How to discard all uncommitted changes.
+
 https://pt.stackoverflow.com/questions/323668/como-descartar-todas-as-altera%C3%A7%C3%B5es-n%C3%A3o-commitadas
 
 	git checkout -- . 		#reverter todas as alterações em arquivos que estavam versionados.
