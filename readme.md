@@ -114,7 +114,7 @@ https://pt.stackoverflow.com/questions/323668/como-descartar-todas-as-altera%C3%
 	git ls-remote origin
 	git fetch origin <name_branch>:<name_branch>
 
-	[references] (https://stackoverflow.com/questions/12762922/git-cannot-see-new-remote-branch/46081117#:~:text=First%2C%20double%20check%20that%20the,references%20from%20the%20remote%20repository)
+[references] (https://stackoverflow.com/questions/12762922/git-cannot-see-new-remote-branch/46081117#:~:text=First%2C%20double%20check%20that%20the,references%20from%20the%20remote%20repository)
 
 
 
