@@ -119,4 +119,20 @@ https://pt.stackoverflow.com/questions/323668/como-descartar-todas-as-altera%C3%
 
 
 
+# 16 - Superficial Clone
+
+	git clone --depth=1 http://10.999.999.999/xxx/src/src-xxx.git
+	cd <project dir>
+	git fetch --depth=4 					# depth=N, with increasing N
+	git fetch --depth=100 					# depth=N, with increasing N
+	git fetch --depth=500 					# depth=N, with increasing N
+	git fetch --unshallow 					# end
+
+[references] (https://stackoverflow.com/questions/38618885/error-rpc-failed-curl-transfer-closed-with-outstanding-read-data-remaining)
+
+
+
+
+
+
 
