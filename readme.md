@@ -96,7 +96,24 @@ https://pt.stackoverflow.com/questions/323668/como-descartar-todas-as-altera%C3%
 	git reset HEAD -- .		#remove arquivos q foram add no HEAD, mais n foi commitado.
 
 
-# 14 - Merge a specific commit
+# 14 - Revertendo Merge
+
+	git revert -m 1 HEAD
+
+	https://stackoverflow.com/questions/1809484/git-how-to-reverse-merge-a-commit
+
+
+# 15 - Revertendo commit
+
+	git log --stat 					# lista dos commits.
+	git reset --hard 19ccc39 			# Revert(delete) commit, remover do codigo.
+
+	https://pt.stackoverflow.com/questions/323668/como-descartar-todas-as-altera%C3%A7%C3%B5es-n%C3%A3o-commitadas
+	
+	https://stackoverflow.com/questions/1338728/delete-commits-from-a-branch-in-git
+	
+
+# 16 - Merge a specific commit
 
 * cherry-pick
 * rebase
@@ -106,9 +123,7 @@ https://pt.stackoverflow.com/questions/323668/como-descartar-todas-as-altera%C3%
 	https://stackoverflow.com/questions/1670970/how-to-cherry-pick-multiple-commits
 
 
-
-
-# 15 - Cannot see new remote branch
+# 17 - Cannot see new remote branch
 
 	git branch -r
 	git ls-remote origin
@@ -119,7 +134,7 @@ https://pt.stackoverflow.com/questions/323668/como-descartar-todas-as-altera%C3%
 
 
 
-# 16 - Superficial Clone
+# 18 - Superficial Clone
 
 	git clone --depth=1 http://10.999.999.999/xxx/src/src-xxx.git
 	cd <project dir>
