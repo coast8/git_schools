@@ -156,6 +156,13 @@ https://pt.stackoverflow.com/questions/323668/como-descartar-todas-as-altera%C3%
 [references] (https://medium.com/@andgomes/git-removendo-arquivos-de-um-reposit%C3%B3rio-7eed699a035f#:~:text=Note%20que%20o%20comando%20git,stage%2C%20pronta%20para%20ser%20submetida.&text=Como%20o%20Git%20nos%20avisa,op%C3%A7%C3%A3o%20cached%20para%20remov%C3%AA%2Dlo.)
 
 
+# 19 - How can I list all commits that changed a specific file?
+
+	git log --follow -- filename
+	
+[references] (https://stackoverflow.com/questions/3701404/how-can-i-list-all-commits-that-changed-a-specific-file)
+
+
 
 
 
