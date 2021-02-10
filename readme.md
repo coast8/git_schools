@@ -81,19 +81,28 @@
 # 12 - CASOS RAROS 
 	
 	* pegar alterações de em um branch/ramo específico de um repositório remoto no GIT?
-		
-	https://pt.stackoverflow.com/questions/6172/como-pegar-alterações-de-em-um-branch-ramo-específico-de-um-repositório-remoto-n
+
+[references]
+
+(https://pt.stackoverflow.com/questions/6172/como-pegar-alterações-de-em-um-branch-ramo-específico-de-um-repositório-remoto-n)
 		
 
 # 13 - REVERTENDO CODIGO
 
 How to discard all uncommitted changes.
 
-https://pt.stackoverflow.com/questions/323668/como-descartar-todas-as-altera%C3%A7%C3%B5es-n%C3%A3o-commitadas
+	git checkout -- . 						#reverse all changes to files that were versioned.
+	git checkout HEAD -- my-file.txt 				#revert a specific file.
+	git clean -f -d							#apagar todos os arquivos e diretórios criados
+	git reset HEAD -- .						#remove arquivos q foram add no HEAD, mais n foi commitado.
+	
+	
 
-	git checkout -- . 		#reverter todas as alterações em arquivos que estavam versionados.
-	git clean -f -d			#apagar todos os arquivos e diretórios criados
-	git reset HEAD -- .		#remove arquivos q foram add no HEAD, mais n foi commitado.
+[references]
+
+(https://pt.stackoverflow.com/questions/323668/como-descartar-todas-as-altera%C3%A7%C3%B5es-n%C3%A3o-commitadas)
+
+(https://stackoverflow.com/questions/7147270/hard-reset-of-a-single-file)
 
 
 # 14 - Revertendo Merge
@@ -108,9 +117,11 @@ https://pt.stackoverflow.com/questions/323668/como-descartar-todas-as-altera%C3%
 	git log --stat 					# lista dos commits.
 	git reset --hard 19ccc39 			# Revert(delete) commit, remover do codigo.
 
-	https://pt.stackoverflow.com/questions/323668/como-descartar-todas-as-altera%C3%A7%C3%B5es-n%C3%A3o-commitadas
+[references]
+
+(https://pt.stackoverflow.com/questions/323668/como-descartar-todas-as-altera%C3%A7%C3%B5es-n%C3%A3o-commitadas)
 	
-	https://stackoverflow.com/questions/1338728/delete-commits-from-a-branch-in-git
+(https://stackoverflow.com/questions/1338728/delete-commits-from-a-branch-in-git)
 	
 
 # 16 - Merge a specific commit
@@ -129,7 +140,9 @@ https://pt.stackoverflow.com/questions/323668/como-descartar-todas-as-altera%C3%
 	git ls-remote origin
 	git fetch origin <name_branch>:<name_branch>
 
-[references] (https://stackoverflow.com/questions/12762922/git-cannot-see-new-remote-branch/46081117#:~:text=First%2C%20double%20check%20that%20the,references%20from%20the%20remote%20repository)
+[references] 
+
+(https://stackoverflow.com/questions/12762922/git-cannot-see-new-remote-branch/46081117#:~:text=First%2C%20double%20check%20that%20the,references%20from%20the%20remote%20repository)
 
 
 
@@ -143,7 +156,9 @@ https://pt.stackoverflow.com/questions/323668/como-descartar-todas-as-altera%C3%
 	git fetch --depth=500 					# depth=N, with increasing N
 	git fetch --unshallow 					# end
 
-[references] (https://stackoverflow.com/questions/38618885/error-rpc-failed-curl-transfer-closed-with-outstanding-read-data-remaining)
+[references]
+
+(https://stackoverflow.com/questions/38618885/error-rpc-failed-curl-transfer-closed-with-outstanding-read-data-remaining)
 
 
 
@@ -153,14 +168,25 @@ https://pt.stackoverflow.com/questions/323668/como-descartar-todas-as-altera%C3%
 	git rm file.txt
 	git commit -m "file.txt removido"
 	
-[references] (https://medium.com/@andgomes/git-removendo-arquivos-de-um-reposit%C3%B3rio-7eed699a035f#:~:text=Note%20que%20o%20comando%20git,stage%2C%20pronta%20para%20ser%20submetida.&text=Como%20o%20Git%20nos%20avisa,op%C3%A7%C3%A3o%20cached%20para%20remov%C3%AA%2Dlo.)
+[references] 
+
+(https://medium.com/@andgomes/git-removendo-arquivos-de-um-reposit%C3%B3rio-7eed699a035f#:~:text=Note%20que%20o%20comando%20git,stage%2C%20pronta%20para%20ser%20submetida.&text=Como%20o%20Git%20nos%20avisa,op%C3%A7%C3%A3o%20cached%20para%20remov%C3%AA%2Dlo.)
 
 
-# 19 - How can I list all commits that changed a specific file?
 
-	git log --follow -- filename
+
+# 19 - List all commits that changed a specific file and author who writing the line ?
+
+	git log --follow -- filename 						#all commits of a file.
+	git blame -L518,536 -- FileServices.java 				#author who writing the line
 	
-[references] (https://stackoverflow.com/questions/3701404/how-can-i-list-all-commits-that-changed-a-specific-file)
+[references] 
+
+(https://stackoverflow.com/questions/3701404/how-can-i-list-all-commits-that-changed-a-specific-file)
+
+(https://stackoverflow.com/questions/8435343/retrieve-the-commit-log-for-a-specific-line-in-a-file)
+
+
 
 
 # 20 - Tags
