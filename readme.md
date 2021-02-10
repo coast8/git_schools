@@ -163,6 +163,24 @@ https://pt.stackoverflow.com/questions/323668/como-descartar-todas-as-altera%C3%
 [references] (https://stackoverflow.com/questions/3701404/how-can-i-list-all-commits-that-changed-a-specific-file)
 
 
+# 20 - Tags
+
+These are tags that mark a point (commit) that represents some significant change in your code, 
+that is, a version (or release) of your project.
+
+	git tag -a v1.0 -m "Sum functionality" 					# create tag
+	git tag 								# list tags
+	git show v1.0 								# details
+	git push origin v1.0 							# versioning tag
+	git tag -d v1.0 							# delete tag
+	git push --delete origin v1.0						# delete remote
+
+[references]
+
+(https://medium.com/rafaeltardivo/git-criando-tags-7c34ee6786be)
+
+
+
 
 
 
