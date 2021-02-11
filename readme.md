@@ -72,6 +72,10 @@
 	git merge --abort       	#aborta o merge em caso de erros.
 	git reset 			#desfaz o commit antes do add.
 
+[references]
+
+(https://stackoverflow.com/questions/44048982/abort-a-git-merge/44049103)
+
 
 # 11 - CHECKOUT PROJECT FOR DEBUG
 	git checkout id_commit 					#Para pegar uma versao antida do projeto.
