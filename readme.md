@@ -66,6 +66,9 @@
 	git checkout id_commit -b nome_branch 			#criar uma branch baseada com o log do commit passado.
 	git checkout -m novo_nome				#renomeando a branche que esta trabalhando.
 	git branch -D nome_branch				#deletando a branche.
+	git checkout --force master  				#força a mudança.	
+
+(https://stackoverflow.com/questions/17989165/git-checkout-master-error-the-following-untracked-working-tree-files-would-be-o)
 
 
 # 10 - ERROS
@@ -113,19 +116,21 @@ How to discard all uncommitted changes.
 
 	git revert -m 1 HEAD
 
-	https://stackoverflow.com/questions/1809484/git-how-to-reverse-merge-a-commit
+https://stackoverflow.com/questions/1809484/git-how-to-reverse-merge-a-commit
 
 
 # 15 - Revertendo commit
 
 	git log --stat 					# lista dos commits.
-	git reset --hard 19ccc39 			# Revert(delete) commit, remover do codigo.
+	git reset --hard 19ccc39 			# (delete) commits, 19ccc39 será agora o ultimo commit.
 
 [references]
 
 (https://pt.stackoverflow.com/questions/323668/como-descartar-todas-as-altera%C3%A7%C3%B5es-n%C3%A3o-commitadas)
 	
 (https://stackoverflow.com/questions/1338728/delete-commits-from-a-branch-in-git)
+
+(https://stackoverflow.com/questions/9529078/how-do-i-use-git-reset-hard-head-to-revert-to-a-previous-commit)
 	
 
 # 16 - Merge a specific commit
