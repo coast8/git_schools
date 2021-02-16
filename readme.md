@@ -209,10 +209,13 @@ that is, a version (or release) of your project.
 	git push origin v1.0 							# versioning tag
 	git tag -d v1.0 							# delete tag
 	git push --delete origin v1.0						# delete remote
+	git fetch --tags -f 							# fetch tags remote
 
 [references]
 
 (https://medium.com/rafaeltardivo/git-criando-tags-7c34ee6786be)
+
+(https://stackoverflow.com/questions/58031165/how-to-get-rid-of-would-clobber-existing-tag)
 
 
 
