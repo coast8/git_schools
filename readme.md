@@ -18,12 +18,14 @@
 	git init 						#para criar um novo repositório.
 	git init --bare 					#pasta do central do projeto.
 	git remote add origin /caminho/para/o/repositório 	#para sincronizar as pastas.
+	git remote set-url origin url 				#set new origin url.
 	git clone /caminho/para/o/repositório 			#crie uma cópia de trabalho em um repositório local.
 	git clone usuário@servidor:/caminho-REPOSITORIO/	#usar um servidor remoto.
 
 
-# 3 - ALTERANDO O DIRETORIO DE ORIGEM
-	git remote set-url origin url
+# 3 - GIT FLOW MODEL
+
+(https://softwareengineering.stackexchange.com/questions/307360/where-do-bugfixes-go-in-the-git-flow-model)
 
 
 # 4 - TRABALHANDO DE FORMA BÁSICA
